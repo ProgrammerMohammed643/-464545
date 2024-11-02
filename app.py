@@ -180,5 +180,5 @@ def home():
     return render_template_string(html_content)
 
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 5000))  # استخدم المتغير PORT أو 5000 افتراضيًا
+    port = int(os.environ.get('PORT', 5039))  # استخدم المتغير PORT أو 5000 افتراضيًا
     app.run(host='0.0.0.0', port=port)  # تأكد من أن الخادم يستمع على 0.0.0.0
