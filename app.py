@@ -160,13 +160,13 @@ html_content = '''
             <li>
                 <a href="https://www.tiktok.com" target="_blank">
                     Tik Tok
-                    <img src="https://www.dropbox.com/scl/fi/lypqfmsyx4fbvzrcvs3jo/hirphn.jpg?rlkey=reyfi49dmstt3z8z0tdqnnosm&dl=1" alt="تيك توك">
+                    <img src="https://www.dropbox.com/scl/fi/olvof2nbdheaxz17v320p/e406192290967ba61e8277e7dbfde0a5.jpg?rlkey=970aybabcws17h4nxjjzk3py2&st=x6r64pm6&dl=0" alt="تيك توك">
                 </a>
             </li>
             <li>
                 <a href="https://telegram.org" target="_blank">
                     Telegram
-                    <img src="https://www.dropbox.com/scl/fi/lypqfmsyx4fbvzrcvs3jo/hirphn.jpg?rlkey=reyfi49dmstt3z8z0tdqnnosm&dl=1" alt="تيلجرام">
+                    <img src="https://www.dropbox.com/scl/fi/fn7dmh5vf5wcearb8n5zx/d172a3ec0dd83307be52a08583c0a780.jpg?rlkey=nov07megnbijpjxnroqllvf3q&st=pab4v6g1&dl=0" alt="تيلجرام">
                 </a>
             </li>
         </ul>
