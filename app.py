@@ -33,14 +33,103 @@ html_content = '''
             z-index: 0;
             overflow: hidden;
         }
-        .shape { /* باقي التنسيقات كما هي */
+        .shape {
+            position: absolute;
+            background-color: black;
+            z-index: 0;
+            opacity: 0.8; /* زيادة الشفافية */
         }
-        /* باقي التنسيقات هنا */
-        video {
-            width: 100%; /* عرض الفيديو بالكامل */
-            max-width: 600px; /* تحديد أقصى عرض */
-            border-radius: 10px; /* إضافة زوايا دائرية للفيديو */
-            margin-bottom: 20px; /* مسافة بين الفيديو والمحتوى الآخر */
+        .large-square {
+            width: 250px;
+            height: 250px;
+            top: 30%;
+            left: 25%;
+            animation: rotateLarge 10s infinite linear;
+        }
+        .small-square {
+            width: 150px;
+            height: 150px;
+            top: 20%;
+            left: 70%;
+            animation: rotateSmall 6s infinite linear;
+        }
+        .triangle {
+            width: 0; 
+            height: 0; 
+            border-left: 75px solid transparent; 
+            border-right: 75px solid transparent; 
+            border-bottom: 130px solid #fff; 
+            position: absolute;
+            animation: moveTriangle 4s infinite alternate;
+        }
+        .triangle1 { top: 50%; left: 15%; }
+        .triangle2 { top: 20%; left: 55%; }
+        .triangle3 { top: 70%; left: 40%; }
+        @keyframes rotateLarge {
+            from { transform: rotateY(0deg); }
+            to { transform: rotateY(360deg); }
+        }
+        @keyframes rotateSmall {
+            from { transform: rotateY(0deg); }
+            to { transform: rotateY(-360deg); }
+        }
+        @keyframes moveTriangle {
+            0% { transform: translateY(0) rotate(0deg); }
+            100% { transform: translateY(-20px) rotate(180deg); }
+        }
+        .container {
+            text-align: center;
+            color: white;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% {
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+            50% {
+                background-color: rgba(50, 50, 50, 0.7);
+            }
+        }
+        h1 { 
+            color: #ffdd57; 
+            margin: 0 0 20px; 
+            animation: colorChange 3s infinite alternate;
+        }
+        @keyframes colorChange {
+            0% { color: #ff5733; }
+            25% { color: #33ff57; }
+            50% { color: #3357ff; }
+            75% { color: #f0e68c; }
+            100% { color: #ff33a1; }
+        }
+        a { 
+            text-decoration: none; 
+            color: #007bff; 
+            padding: 10px 15px; 
+            border-radius: 5px; 
+            transition: background 0.3s;
+            display: flex;
+            align-items: center;
+        }
+        a:hover { 
+            background: rgba(0, 123, 255, 0.1); 
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        img {
+            width: 30px; /* عرض الصورة */
+            height: 30px; /* ارتفاع الصورة */
+            margin-left: 10px; /* مسافة بين النص والصورة */
         }
     </style>
 </head>
@@ -53,10 +142,6 @@ html_content = '''
         <div class="triangle triangle3"></div>
     </div>
     <div class="container">
-        <video controls>
-            <source src="https://www.dropbox.com/scl/fi/32u6ud295izcxqdjj64ae/4_5896868210531108401.mp4?rlkey=e9ocelr312f6rjrouf6um3gjb&dl=1" type="video/mp4">
-            عذراً، متصفحك لا يدعم تشغيل الفيديو.
-        </video>
         <h1>Programmer Muhammad Abdullah ايوا يصحبي عامل ايه في موقع</h1>
         <p>تفضل بزيارة روابط التواصل الاجتماعي أدناه:</p>
         <ul>
@@ -89,7 +174,6 @@ html_content = '''
 </body>
 </html>
 '''
-
 
 @app.route('/')
 def home():
