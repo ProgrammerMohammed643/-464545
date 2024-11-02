@@ -159,13 +159,13 @@ html_content = '''
             </li>
             <li>
                 <a href="https://www.tiktok.com" target="_blank">
-                    تيك توك
+                    Tik Tok
                     <img src="https://www.dropbox.com/scl/fi/lypqfmsyx4fbvzrcvs3jo/hirphn.jpg?rlkey=reyfi49dmstt3z8z0tdqnnosm&dl=1" alt="تيك توك">
                 </a>
             </li>
             <li>
                 <a href="https://telegram.org" target="_blank">
-                    تيلجرام
+                    Telegram
                     <img src="https://www.dropbox.com/scl/fi/lypqfmsyx4fbvzrcvs3jo/hirphn.jpg?rlkey=reyfi49dmstt3z8z0tdqnnosm&dl=1" alt="تيلجرام">
                 </a>
             </li>
