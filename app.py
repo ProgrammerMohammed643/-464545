@@ -36,15 +36,11 @@ html_content = '''
         .shape { /* باقي التنسيقات كما هي */
         }
         /* باقي التنسيقات هنا */
-        .video-container {
-            position: relative;
-            z-index: 1;
-            margin: 20px 0; /* إضافة مسافة بين الفيديو وباقي المحتوى */
-        }
         video {
             width: 100%; /* عرض الفيديو بالكامل */
             max-width: 600px; /* تحديد أقصى عرض */
             border-radius: 10px; /* إضافة زوايا دائرية للفيديو */
+            margin-bottom: 20px; /* مسافة بين الفيديو والمحتوى الآخر */
         }
     </style>
 </head>
@@ -57,13 +53,11 @@ html_content = '''
         <div class="triangle triangle3"></div>
     </div>
     <div class="container">
+        <video controls>
+            <source src="https://www.dropbox.com/scl/fi/32u6ud295izcxqdjj64ae/4_5896868210531108401.mp4?rlkey=e9ocelr312f6rjrouf6um3gjb&dl=1" type="video/mp4">
+            عذراً، متصفحك لا يدعم تشغيل الفيديو.
+        </video>
         <h1>Programmer Muhammad Abdullah ايوا يصحبي عامل ايه في موقع</h1>
-        <div class="video-container">
-            <video controls>
-                <source src="https://www.dropbox.com/scl/fi/32u6ud295izcxqdjj64ae/4_5896868210531108401.mp4?rlkey=e9ocelr312f6rjrouf6um3gjb&dl=1" type="video/mp4">
-                عذراً، متصفحك لا يدعم تشغيل الفيديو.
-            </video>
-        </div>
         <p>تفضل بزيارة روابط التواصل الاجتماعي أدناه:</p>
         <ul>
             <li>
@@ -95,6 +89,7 @@ html_content = '''
 </body>
 </html>
 '''
+
 
 @app.route('/')
 def home():
