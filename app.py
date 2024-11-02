@@ -160,13 +160,13 @@ html_content = '''
             <li>
                 <a href="https://www.tiktok.com" target="_blank">
                     TikTok
-                    <img src="https://www.dropbox.com/scl/fi/olvof2nbdheaxz17v320p/e406192290967ba61e8277e7dbfde0a5.jpg?raw=1" alt="تيك توك">
+                    <img src="https://www.dropbox.com/scl/fi/lypqfmsyx4fbvzrcvs3jo/hirphn.jpg?rlkey=reyfi49dmstt3z8z0tdqnnosm&dl=1" alt="تيك توك">
                 </a>
             </li>
             <li>
                 <a href="https://telegram.org" target="_blank">
                     Telegram
-                    <img src="https://www.dropbox.com/scl/fi/fn7dmh5vf5wcearb8n5zx/d172a3ec0dd83307be52a08583c0a780.jpg?raw=1" alt="تيلجرام">
+                    <img src="https://www.dropbox.com/scl/fi/lypqfmsyx4fbvzrcvs3jo/hirphn.jpg?rlkey=reyfi49dmstt3z8z0tdqnnosm&dl=1" alt="تيلجرام">
                 </a>
             </li>
         </ul>
@@ -180,5 +180,5 @@ def home():
     return render_template_string(html_content)
 
 if __name__ == '__main__':
-    port = int(os.environ.get("PORT", 5098))  # استخدم المنفذ المحدد من قبل البيئة
+    port = int(os.environ.get("PORT", 5000))  # استخدم المنفذ المحدد من قبل البيئة
     app.run(host='0.0.0.0', port=port)  # استمع على كل الواجهات
