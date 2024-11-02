@@ -180,5 +180,5 @@ def home():
     return render_template_string(html_content)
 
 if __name__ == '__main__':
-    port = int(os.environ.get("PORT", 5000))  # استخدم المنفذ المحدد من قبل البيئة
+    port = int(os.environ.get("PORT", 5098))  # استخدم المنفذ المحدد من قبل البيئة
     app.run(host='0.0.0.0', port=port)  # استمع على كل الواجهات
