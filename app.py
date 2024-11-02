@@ -1,4 +1,5 @@
 from flask import Flask, render_template_string
+import os
 
 app = Flask(__name__)
 
@@ -159,13 +160,13 @@ html_content = '''
             <li>
                 <a href="https://www.tiktok.com" target="_blank">
                     تيك توك
-                    <img src="https://www.dropbox.com/scl/fi/lypqfmsyx4fbvzrcvs3jo/hirphn.jpg?rlkey=reyfi49dmstt3z8z0tdqnnosm&dl=1" alt="تيك توك">
+                    <img src="https://www.dropbox.com/scl/fi/lypqfmsyx4fbvzrcvs3jo/hirphn.jpg?raw=1" alt="تيك توك">
                 </a>
             </li>
             <li>
                 <a href="https://telegram.org" target="_blank">
                     تيلجرام
-                    <img src="https://www.dropbox.com/scl/fi/lypqfmsyx4fbvzrcvs3jo/hirphn.jpg?rlkey=reyfi49dmstt3z8z0tdqnnosm&dl=1" alt="تيلجرام">
+                    <img src="https://www.dropbox.com/scl/fi/lypqfmsyx4fbvzrcvs3jo/hirphn.jpg?raw=1" alt="تيلجرام">
                 </a>
             </li>
         </ul>
@@ -179,4 +180,5 @@ def home():
     return render_template_string(html_content)
 
 if __name__ == '__main__':
-    app.run(debug=True, port=50660)
+    port = int(os.environ.get('PORT', 5000))  # استخدم المتغير PORT أو 5000 افتراضيًا
+    app.run(host='0.0.0.0', port=port)  # تأكد من أن الخادم يستمع على 0.0.0.0
