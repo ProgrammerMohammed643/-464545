@@ -181,4 +181,4 @@ def home():
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5098))  # استخدم المنفذ المحدد من قبل البيئة
-    app.run(host='0.0.0.0', port=port)  # استمع على كل الواجهات
+    app.run(host='0.0.0.22200', port=port)  # استمع على كل الواجهات
