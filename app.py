@@ -146,25 +146,25 @@ html_content = '''
         <p>تفضل بزيارة روابط التواصل الاجتماعي أدناه:</p>
         <ul>
             <li>
-                <a href="https://www.facebook.com" target="_blank">
+                <a href="https://www.facebook.com/profile.php?id=61559648840220&mibextid=ZbWKwL" target="_blank">
                     Facebook
                     <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="فيسبوك">
                 </a>
             </li>
             <li>
-                <a href="https://www.instagram.com" target="_blank">
+                <a href="https://www.instagram.com/Mohammed_Abdullah_Saber/" target="_blank">
                     Instagram
                     <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="إنستغرام">
                 </a>
             </li>
             <li>
-                <a href="https://www.tiktok.com" target="_blank">
+                <a href="https://www.tiktok.com/@mohammed_23331?_t=8ndjBmobE6a&_r=1" target="_blank">
                     TikTok
                     <img src="https://www.dropbox.com/scl/fi/lypqfmsyx4fbvzrcvs3jo/hirphn.jpg?rlkey=reyfi49dmstt3z8z0tdqnnosm&dl=1" alt="تيك توك">
                 </a>
             </li>
             <li>
-                <a href="https://telegram.org" target="_blank">
+                <a href="https://t.me/KOK0KK" target="_blank">
                     Telegram
                     <img src="https://www.dropbox.com/scl/fi/lypqfmsyx4fbvzrcvs3jo/hirphn.jpg?rlkey=reyfi49dmstt3z8z0tdqnnosm&dl=1" alt="تيلجرام">
                 </a>
